@@ -35,7 +35,7 @@ export function ContactSection() {
               Informasi Kontak
             </h3>
 
-            <div className="w-full flex justify-between space-y-6">
+            <div className="w-full flex flex-col md:flex-row justify-between space-y-6">
               <div className="flex items-start space-x-4">
                 <Phone className="w-6 h-6 text-white mt-1" />
                 <div>
