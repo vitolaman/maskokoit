@@ -112,7 +112,7 @@ export default function Home() {
             data-aos-duration="1000"
             className="flex flex-col items-center justify-center gap-4"
           >
-            <div className="text-white w-1/3 px-4 h-[34px] flex items-center justify-center text-[12px] font-medium rounded-full bg-white/5 backdrop-blur border border-white/20">
+            <div className="text-white md:w-1/3 p-4 md:p-0 px-4 h-[34px] flex items-center justify-center text-[12px] font-medium rounded-full bg-white/5 backdrop-blur border border-white/20">
               <svg
                 stroke="currentColor"
                 fill="none"
@@ -130,9 +130,9 @@ export default function Home() {
                 <path d="M20 10l-10 10"></path>
                 <path d="M20 16l-4 4"></path>
               </svg>
-              <p>Collaborate With Us!</p>
+              <p className="text-center">Collaborate With Us!</p>
             </div>
-            <h1 className="text-5xl font-bold">Your One Stop IT Solution</h1>
+            <h1 className="text-5xl font-bold text-center">Your One Stop IT Solution</h1>
             <h1 className="text-lg text-center">
               We offer a wide range of IT services to meet your technology needs
               with the highest quality

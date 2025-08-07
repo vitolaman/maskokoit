@@ -38,13 +38,13 @@ export function Navbar() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6 }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        className={`w-screen fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           isScrolled
             ? "bg-black/50 backdrop-blur-md border-b border-neutral-200/50"
             : "bg-transparent"
         }`}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-screen md:max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <motion.div whileHover={{ scale: 1.05 }} className="flex-shrink-0">
@@ -191,7 +191,7 @@ export function Navbar() {
                 <div className="pt-4 space-y-3 border-t border-neutral-800/30">
                   <div className="flex items-center space-x-3 px-3 text-neutral-300">
                     <Phone className="w-4 h-4 text-white" />
-                    <span className="text-sm">+62 812-3456-7890</span>
+                    <span className="text-sm">+62 812-3252-8421</span>
                   </div>
                   <div className="flex items-center space-x-3 px-3 text-neutral-300">
                     <Mail className="w-4 h-4 text-white" />
