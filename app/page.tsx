@@ -1,25 +1,17 @@
 "use client";
 
-import { HeroParallaxDemo } from "@/components/hero-parallax-demo";
 import { ServicesSection } from "@/components/services-section";
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
-import { WobbleCardDemo } from "@/components/feature-wobble-section";
-import { HeroSectionOne } from "@/components/hero-section";
 import Beams from "@/components/beams";
-import CurvedLoop from "@/components/curved-text";
-import FadeContent from "@/components/fade";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { motion } from "motion/react";
 import { ScrollProgress } from "@/components/animate-ui/components/scroll-progress";
 import ScrollBaseAnimation from "@/components/uilayouts/scroll-text-marque";
-import { StickyScrollRevealDemo } from "@/components/project-section";
-import { StickyScroll } from "@/components/ui/sticky-scroll-reveal";
-import ImageReveal2 from "@/components/hover-image-reveal";
 import ScrollCard from "@/components/scroll-card";
 import { GlowingEffectDemo } from "@/components/services-glowing-card";
 
@@ -31,66 +23,11 @@ export default function Home() {
     });
   }, []);
 
-  const content = [
-    {
-      title: "In-n-Out Car Wash",
-      description:
-        "Reworks their company website for In-n-Out Car Wash, showcasing their services and features with modern design.",
-      content: (
-        <div className="flex h-full w-full items-center justify-center text-white">
-          <img
-            src="/innout.png"
-            width={800}
-            height={450}
-            className="object-contain rounded-2xl overflow-hidden"
-            alt="linear board demo"
-          />
-        </div>
-      ),
-    },
-    {
-      title: "Indonesian Hotel GM Association",
-      description:
-        "Launch their Website membership platform and E-commerce with blogs to showcase their activities and events.",
-      content: (
-        <div className="flex h-full w-full items-center justify-center text-white">
-          <img
-            src="/ihgma.png"
-            height={450}
-            width={800}
-            className="object-contain rounded-2xl overflow-hidden"
-            alt="linear board demo"
-          />
-        </div>
-      ),
-    },
-    {
-      title: "CGM11",
-      description:
-        "Create a CMS to showcase internal blog article and social media embed post and media website.",
-      content: (
-        <div className="flex items-center justify-center text-white">
-          <img
-            src="/cgm11.png"
-            width={800}
-            height={450}
-            className="object-contain rounded-2xl overflow-hidden"
-            alt="linear board demo"
-          />
-        </div>
-      ),
-    },
-    {
-      title: "",
-      description: "",
-      content: <div></div>,
-    },
-  ];
-
   return (
     <motion.div
       transition={{ duration: 0.4 }}
       className="min-h-screen bg-black"
+      id="home"
     >
       {/* <HeroParallaxDemo /> */}
       <ScrollProgress />
@@ -132,7 +69,9 @@ export default function Home() {
               </svg>
               <p className="text-center">Collaborate With Us!</p>
             </div>
-            <h1 className="text-5xl font-bold text-center">Your One Stop IT Solution</h1>
+            <h1 className="text-5xl font-bold text-center">
+              Your One Stop IT Solution
+            </h1>
             <h1 className="text-lg text-center">
               We offer a wide range of IT services to meet your technology needs
               with the highest quality

@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export function ContactSection() {
   return (
-    <section className="bg-black py-24 px-4">
+    <section id="contact" className="bg-black py-24 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}

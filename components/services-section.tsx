@@ -1,48 +1,5 @@
-"use client"
-import { motion } from "motion/react"
-import { Globe, Settings, Network, Monitor, Wrench, Download } from "lucide-react"
-
-const services = [
-  {
-    icon: Globe,
-    title: "Pembuatan Website Company Profile",
-    description: "Website profesional yang mencerminkan identitas perusahaan Anda dengan desain modern dan responsif.",
-    features: ["Desain Responsif", "SEO Optimized", "Content Management", "Mobile Friendly"],
-  },
-  {
-    icon: Settings,
-    title: "Pembuatan Sistem IT",
-    description:
-      "Solusi sistem informasi custom yang disesuaikan dengan kebutuhan bisnis dan workflow perusahaan Anda.",
-    features: ["Custom Development", "Database Design", "API Integration", "User Management"],
-  },
-  {
-    icon: Network,
-    title: "Instalasi Jaringan",
-    description:
-      "Pemasangan dan konfigurasi jaringan komputer untuk kantor, warnet, atau rumah dengan performa optimal.",
-    features: ["Network Setup", "WiFi Configuration", "Security Setup", "Maintenance"],
-  },
-  {
-    icon: Monitor,
-    title: "Rakit PC",
-    description:
-      "Perakitan komputer custom sesuai kebutuhan dan budget, dari PC gaming hingga workstation profesional.",
-    features: ["Custom Build", "Gaming PC", "Office PC", "Workstation"],
-  },
-  {
-    icon: Wrench,
-    title: "Reparasi Laptop",
-    description: "Layanan perbaikan laptop dengan diagnosa akurat dan penanganan cepat untuk berbagai jenis kerusakan.",
-    features: ["Hardware Repair", "Software Troubleshooting", "Data Recovery", "Upgrade Components"],
-  },
-  {
-    icon: Download,
-    title: "Instalasi Software",
-    description: "Instalasi dan konfigurasi software aplikasi, sistem operasi, dan program khusus sesuai kebutuhan.",
-    features: ["OS Installation", "Software Setup", "License Management", "Configuration"],
-  },
-]
+"use client";
+import { motion } from "motion/react";
 
 export function ServicesSection() {
   return (
@@ -97,5 +54,5 @@ export function ServicesSection() {
         </div> */}
       </div>
     </section>
-  )
+  );
 }

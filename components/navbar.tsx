@@ -105,6 +105,10 @@ export function Navbar() {
               <motion.a
                 key={"contact"}
                 href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#contact");
+                }}
                 className="text-neutral-300 hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-300 cursor-pointer relative group"
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
