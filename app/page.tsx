@@ -23,6 +23,13 @@ export default function Home() {
     });
   }, []);
 
+  const scrollToSection = (href: string) => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <motion.div
       transition={{ duration: 0.4 }}
@@ -89,11 +96,23 @@ export default function Home() {
               }}
               className="relative z-10 mt-8 flex flex-wrap items-center justify-center gap-4"
             >
-              <button className="w-60 transform rounded-full border border-gray-300 bg-white px-6 py-4 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#about");
+                }}
+                className="w-60 transform rounded-full border border-gray-300 bg-white px-6 py-4 font-medium text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-gray-100 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900"
+              >
                 Explore Now
               </button>
-              <button className="w-60 transform rounded-full bg-white/5 backdrop-blur border border-white/20 px-6 py-4 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900">
-                Contact Support
+              <button
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToSection("#contact");
+                }}
+                className="w-60 transform rounded-full bg-white/5 backdrop-blur border border-white/20 px-6 py-4 font-medium text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/20 dark:border-gray-700 dark:bg-black dark:text-white dark:hover:bg-gray-900"
+              >
+                Contact Us
               </button>
             </motion.div>
           </div>
