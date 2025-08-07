@@ -11,8 +11,8 @@ const figtree = Figtree({
 })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'MasKokoIT',
+  description: 'One Stop IT Solution',
   generator: 'v0.dev',
 }
 
